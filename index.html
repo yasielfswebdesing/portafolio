@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descripción de tu página aquí">
+    <title>Mi página</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+   <link href="https://fonts.googleapis.com/css2?family=Rye&family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+   <div id="header">
+  <div class="container">
+    <nav>
+      <img src="" class="logo">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Portafolio</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-text">
+      <p>Web Desingnner/Software Ingenner.</p>
+      <h1>Hi i'm Yasielfs</h1>
+  </div>
+</div>
+   </div>
+<!-- --------about me----------->
+<div id="about">
+  <div class="container">
+    <div class="row">
+      <div class="about-col-1">
+        <img src="_.jpeg">
+      </div>
+      <div class="about-col-2">
+        <h1 class="sub-title">About Me</h1>
+        <p>I am Yasielfs, a web designer and developer with a passion for creating elegant and functional digital experiences. I specialize in combining creativity, visual design and technology to build modern websites that connect with people and boost businesses. My approach focuses on quality, attention to detail and innovation, always seeking for each project to have a real visual and practical impact. I enjoy constantly learning new tools and techniques to keep my work at the forefront. More than just creating sites, my goal is to tell digital stories that reflect the identity of each brand and achieve concrete results.</p>
+       <div class="tab-titles">
+        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+        <p class="tab-links" onclick="opentab('Education')">Education</p>
+       </div>
+       <div class="tab-contents active-tab" id="Skills">
+        <ul>
+          <li><span>UI/UX</span><br>Designing web app interfaces</li>
+          <li><span>Programming Languages</span><br>C, CSS, HTML, JavaScript, Python, SQL</li>
+          <li><span>Frontend Developer</span><br>Building Websites</li>
+        </ul>
+       </div>
+       <div class="tab-contents" id="Experience" >
+        <ul>
+          <li><span>Experience</span><br>Experience with Web Desing</li>
+          <li><span>Experience</span><br>Experience with Frontend</li>
+          <li><span>Experience</span><br>Experience with Base of Data</li>
+        </ul>
+       </div>
+        <div class="tab-contents" id="Education">
+        <ul>
+          <li><span>Harvard Course Online</span><br>CS50</li>
+          <li><span>Standford Course Online</span><br>Code in Place</li>
+          <li><span>Course of Mit Unversity Online</span><br>Python</li>
+        </ul>
+       </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!----------services--------->
+<div id="services">
+  <div class="container">
+     <h1 class="sub-title2">My Services:</h1>
+     <div class="services-list">
+           <div>
+             <h2>Web Desing</h2>
+             <p>I create modern, responsive and easy-to-navigate websites. Each design is mobile-friendly and looks great on any device, ensuring your customers have the best experience.</p>
+             <a href="#">Learn more</a>
+           </div>
+           <div>
+             <h2>Landing Pages</h2>
+             <p>I design landing pages that capture attention and convert visitors into customers. Perfect for promoting products or services effectively.</p>
+             <a href="#">Learn more</a>
+           </div>
+           <div>
+             <h2>Creative Personalization</h2>
+             <p>Your page can have a unique touch: colors, typography and style that reflect your brand</p>
+             <a href="#">Learn more</a>
+           </div>
+     </div>
+  </div>
+</div>
+<!----------------Portfolio-------------------->
+<div id="portfolio">
+  <div class="container">
+    <h1 class="sub-title">My Work:</h1>
+    <div class="work-list">
+
+      <div class="work">
+        <img src="work-1.jpeg">
+        <div class="layer">
+          <h3 class="h31">Web Site Barber Shop</h3>
+        </div>
+      </div>
+
+      <div class="work">
+        <img src="work-2.jpeg">
+         <h3 class="h32">Web Site Barber Shop</h3>
+      </div>
+
+      <div class="work">
+        <img src="work-3.jpeg">
+         <h3 class="h33">Web Site Barber Shop</h3>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!----------------Contact-------------------->
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title3">Contact Me</h1>
+        <p class="p33"><i class="fas fa-mail-bulk"></i></i>Contact yasielfswebdesing@gmail.com</p>
+        <div class="social-icons">
+         <a href=""><i class="fab fa-instagram"></i></a>
+         <a href=""><i class="fab fa-facebook"></i></a>
+         <a href=""><i class="fab fa-linkedin"></i></i></a>
+        </div>
+      </div>
+   
+      <div class="contact-right">
+        <form>
+          <input type="text" name="Name" placeholder="Your name" required>
+          <input type="email" name="email" placeholder="Your email" required>
+          <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+          <button type="submit" class="btn">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+    <script>
+
+     var tablinks = document.getElementsByClassName("tab-links")
+     var tabcontents = document.getElementsByClassName("tab-contents")
+     function opentab(tabname) {
+               for(tablink of tablinks) {
+                 tablink.classList.remove("active-link");
+               }
+               for(tabcontent of tabcontents) {
+                 tabcontent.classList.remove("active-tab");
+               }
+               event.currentTarget.classList.add("active-link");
+               document.getElementById(tabname).classList.add("active-tab");
+     }
+    </script>
+    
+</body>     
+
+   
+</html>
